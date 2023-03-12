@@ -40,9 +40,9 @@ app.post('/meta',(req,res)=>{
 
 app.post('/contracts',(req,res)=>{
     // const [metaDataCDI,setMetaDataCDI] =useState("")
-    const {name,pic,contractAdd,myAddress}= req.body;
+    const {name,pic,chain,contractAdd,myAddress}= req.body;
     // console.log(name,contractAdd,myAddress)
-    contracts.push({name,pic,contractAdd,myAddress})
+    contracts.push({name,pic,chain,contractAdd,myAddress})
 })
 
 app.get('/contracts',(req,res)=>{
