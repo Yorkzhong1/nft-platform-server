@@ -18,6 +18,8 @@
     "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
     "fs": "^0.0.1-security",
     "jimp": "^0.22.7",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21",
     "react": "^18.2.0"
   }
 }
