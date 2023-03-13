@@ -47,7 +47,7 @@ app.post('/contracts',(req,res)=>{
 
 app.post('/delete',(req,res)=>{
     contracts=[]
-    req.send('服务器端数据已经清零')
+    res.send('服务器端数据已经清零')
 })
 
 app.get('/contracts',(req,res)=>{
