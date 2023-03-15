@@ -1,11 +1,11 @@
 const axios = require ('axios')
 
 
-const serverUrl = 'http://localhost:3000'
+const serverUrl = 'http://localhost:1000'
 
 //create an NFT
 let newNFT={
-    name:"Check",
+    name:"NewNFT",
     pic:"url",
     chain:1337,
     contractAdd:'0xxxx',
@@ -13,6 +13,16 @@ let newNFT={
     active:false
 }
 
+const test=async ()=>{
+    try{
+        // console.log(`${serverUrl}/addNFT`)
+        await axios.get(`${serverUrl}/test`)
+        .then((res)=>{console.log(res.data)})
+    }catch (error) {
+        console.log(error);
+      }
+  }
+// test()
 
 const createNFT=async ()=>{
     try{
@@ -23,8 +33,7 @@ const createNFT=async ()=>{
         console.log(error);
       }
   }
-
-//   createNFT()
+  createNFT()
 
 //get list of active NFT, change the input to "true" or "false" to get active or inactive lists of NFT
 const getNFT=async (active)=>{
@@ -62,4 +71,4 @@ const removeNFT=async (contractAdd)=>{
       }
 
     }
-  removeNFT("0xxxx")
+//   removeNFT("0xxxx")
