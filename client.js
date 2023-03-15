@@ -1,11 +1,11 @@
 const axios = require ('axios')
 
 
-const serverUrl = 'http://localhost:1000'
+const serverUrl = 'https://nft-platform-server.onrender.com'
 
 //create an NFT
 let newNFT={
-    name:"NewNFT",
+    name:"added server",
     pic:"url",
     chain:1337,
     contractAdd:'0xxxx',
